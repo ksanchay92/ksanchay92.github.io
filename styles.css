@@ -1,0 +1,8 @@
+.linkedin-icon svg {
+  fill: #ffffff; /* white by default */
+  transition: fill 0.3s ease;
+}
+
+.linkedin-icon:hover svg {
+  fill: #0077b5; /* blue on hover */
+}
