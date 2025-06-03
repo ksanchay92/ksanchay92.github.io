@@ -20,35 +20,14 @@ body {
   max-width: 500px;
 }
 
-.icon-link svg {
+.icon {
   width: 48px;
   height: 48px;
   margin: 0 12px;
-  color: white;
-  transition: color 0.3s ease;
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1); /* makes black SVG white */
 }
 
-/* Hover color customization using hex codes */
-.icon-link.linkedin:hover svg {
-  color: #0A66C2; /* LinkedIn blue */
-}
-
-.icon-link.reddit:hover svg {
-  color: #FF4500; /* Reddit orange */
-}
-
-.icon-link.instagram:hover svg {
-  color: #E1306C; /* Instagram pink */
-}
-
-.icon-link.homeassistant:hover svg {
-  color: #41BDF5; /* Home Assistant blue */
-}
-
-.icon-link.pihole:hover svg {
-  color: #96060C; /* Pi-hole red */
-}
-
-.icon-link.jellyfin:hover svg {
-  color: #7A1FA2; /* Jellyfin purple */
+.icon:hover {
+  filter: none; /* shows original colored SVG on hover */
 }
