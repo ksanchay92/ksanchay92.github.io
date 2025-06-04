@@ -96,3 +96,10 @@ body {
   gap: 60px;
   justify-content: center;
 }
+
+.marriage {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none; /* prevent hover effect */
+}
