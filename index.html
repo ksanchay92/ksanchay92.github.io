@@ -18,30 +18,36 @@
     </div>
 
     <!-- Family Tree -->
-    <div class="family-tree">
-      <div class="top-row">
-        <a href="/sanchay/" class="box" title="Sanchay Kulkarni">
-          <img src="icons/engineer.svg" alt="Engineer" />
-        </a>
-        <div class="marriage-icon">
-          <img src="icons/marriage.svg" alt="Marriage" />
-        </div>
-        <div class="box">
-          <img src="icons/doctor.svg" alt="Doctor" />
-        </div>
-      </div>
-
-      <div class="vertical-connector"></div>
-
-      <div class="bottom-row">
-        <div class="box">
-          <img src="icons/crib.svg" alt="Child 1" />
-        </div>
-        <div class="box">
-          <img src="icons/crib.svg" alt="Child 2" />
-        </div>
-      </div>
+    <!-- Inside the .family-tree -->
+<div class="family-tree">
+  <div class="top-row with-horizontal-connector">
+    <a href="/sanchay/" class="box" title="Sanchay Kulkarni">
+      <img src="icons/engineer.svg" alt="Engineer" />
+    </a>
+    <div class="marriage-icon">
+      <img src="icons/marriage.svg" alt="Marriage" />
     </div>
+    <div class="box">
+      <img src="icons/doctor.svg" alt="Doctor" />
+    </div>
+  </div>
+
+  <!-- Horizontal connector between top two boxes -->
+  <div class="horizontal-connector-top"></div>
+
+  <div class="vertical-connector"></div>
+
+  <!-- Bottom row of children -->
+  <div class="bottom-row">
+    <div class="box">
+      <img src="icons/crib.svg" alt="Child 1" />
+    </div>
+    <div class="box">
+      <img src="icons/crib.svg" alt="Child 2" />
+    </div>
+  </div>
+</div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
