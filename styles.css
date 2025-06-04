@@ -1,0 +1,33 @@
+body {
+  padding-top: 40px;
+  background-color: #222;
+  color: #ddd;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #444;
+}
+
+.info-box {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 12px;
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1); /* makes black SVG white */
+}
+
+.icon:hover {
+  filter: none; /* shows original colored SVG on hover */
+}
