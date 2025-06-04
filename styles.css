@@ -5,7 +5,7 @@ body {
 }
 
 .profile-photo {
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -20,18 +20,17 @@ body {
   max-width: 500px;
 }
 
-/* Icons */
 .icon {
   width: 50%;
   height: auto;
-  filter: brightness(0) invert(1); /* make black icons white */
+  filter: brightness(0) invert(1); /* white icons */
 }
 
 .marriage-icon {
   width: 25%;
 }
 
-/* Family Tree Layout */
+/* Family Tree Structure */
 
 .family-tree {
   display: flex;
@@ -41,12 +40,28 @@ body {
   margin-top: 40px;
 }
 
+.top-row-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
 .top-row {
   display: flex;
   gap: 60px;
   justify-content: center;
   position: relative;
-  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.top-connector {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #444;
+  z-index: 0;
 }
 
 .box {
@@ -63,15 +78,19 @@ body {
 
 .box:hover {
   background-color: #6f42c1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-/* Connector lines */
+.no-hover:hover {
+  background-color: #2c2c2c;
+  transform: none;
+}
+
 .vertical-line {
   width: 2px;
   height: 40px;
   background: #444;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 .bottom-connector {
