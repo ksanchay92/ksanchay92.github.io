@@ -26,7 +26,7 @@ body {
   filter: brightness(0) invert(1); /* white icons */
 }
 
-.marriage-icon {
+.heart-icon {
   width: 25%;
 }
 
@@ -54,8 +54,6 @@ body {
   z-index: 1;
 }
 
-/* Removed .top-connector styles */
-
 /* Box styles */
 .box {
   width: 80px;
@@ -79,17 +77,13 @@ body {
   transform: none;
 }
 
-/* Removed vertical-line styles */
-
-/* Removed bottom-connector and horizontal-line styles */
-
 .bottom-row {
   display: flex;
   gap: 80px;
   justify-content: center;
 }
 
-.marriage {
+.heart {
   background-color: transparent;
   border: none;
   box-shadow: none;
