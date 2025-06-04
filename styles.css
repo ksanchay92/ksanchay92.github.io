@@ -5,7 +5,7 @@ body {
 }
 
 .profile-photo {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -20,7 +20,18 @@ body {
   max-width: 500px;
 }
 
-/* FAMILY TREE */
+/* Icons */
+.icon {
+  width: 50%;
+  height: auto;
+  filter: brightness(0) invert(1); /* make black icons white */
+}
+
+.marriage-icon {
+  width: 25%;
+}
+
+/* Family Tree Layout */
 
 .family-tree {
   display: flex;
@@ -52,21 +63,10 @@ body {
 
 .box:hover {
   background-color: #6f42c1;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-.box img {
-  width: 50%;
-  height: auto;
-  filter: brightness(0) invert(1); /* white icons */
-}
-
-.box.marriage img {
-  width: 25%;
-}
-
-/* Connectors */
-
+/* Connector lines */
 .vertical-line {
   width: 2px;
   height: 40px;
