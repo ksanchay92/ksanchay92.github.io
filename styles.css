@@ -20,46 +20,58 @@ body {
   max-width: 500px;
 }
 
-.icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 12px;
-  transition: filter 0.3s ease;
-  filter: brightness(0) invert(1); /* makes black SVG white */
-}
-
-.icon:hover {
-  filter: none; /* shows original colored SVG on hover */
-}
-
-.box-connector {
-  display: flex;
-  align-items: center;
+.family-tree {
   position: relative;
-  margin: 40px 0; /* For spacing */
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.box-connector::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 8%;  /* Adjust as needed */
-  right: 8%; /* Adjust as needed */
-  height: 3px;
-  background: #444;
-  z-index: 0;
+.top-row,
+.bottom-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .box {
   width: 100px;
-  height: 60px;
-  background: #eee;
+  height: 100px;
+  background: white;
   border: 2px solid #444;
   border-radius: 10px;
-  text-align: center;
-  line-height: 60px;
-  font-weight: bold;
-  z-index: 1; /* Keep the boxes above the line */
-  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box img {
+  width: 60%;
+  height: auto;
+}
+
+.vertical-connector {
+  width: 2px;
+  height: 40px;
+  background: #444;
+  position: relative;
+}
+
+.vertical-connector::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -60px;
+  width: 120px;
+  height: 2px;
+  background: #444;
 }
