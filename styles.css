@@ -77,6 +77,13 @@ body {
   transform: none;
 }
 
+.middle-row {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+
 .bottom-row {
   display: flex;
   gap: 80px;
