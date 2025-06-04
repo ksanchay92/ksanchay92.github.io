@@ -112,7 +112,7 @@ body {
 
 .bottom-row {
   display: flex;
-  gap: 60px;
+  gap: 80px;
   justify-content: center;
 }
 
