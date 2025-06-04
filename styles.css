@@ -1,101 +1,124 @@
 body {
-  background-image: url('img/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-top: 40px;
+  background-color: #222;
+  color: #ddd;
 }
 
 .profile-photo {
-  max-width: 70%;
+  max-width: 45%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
   border: 3px solid #444;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* Info box styling (optional, can be customized) */
 .info-box {
-  background: rgba(0,0,0,0.5);
-  padding: 16px;
-  border-radius: 10px;
-  margin-bottom: 16px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
-  margin: 0 8px;
+  width: 50%;
+  height: auto;
+  filter: brightness(0) invert(1); /* white icons */
 }
 
-/* Family tree styles */
-.tree {
+.marriage-icon {
+  width: 25%;
+}
+
+/* Family Tree Structure */
+
+.family-tree {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 48px;
+  position: relative;
+  margin-top: 20px;
 }
 
-.row {
+.top-row-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.top-row {
   display: flex;
-  align-items: center;
+  gap: 80px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
-.node {
-  padding: 8px 16px;
-  border: 2px solid #444;
-  border-radius: 8px;
-  background: #fff;
-  color: #222;
-  font-weight: bold;
-  min-width: 80px;
-}
-
-.line-horizontal {
-  width: 40px;
+.top-connector {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   height: 2px;
   background: #444;
-  margin: 0 4px;
+  z-index: 0;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: #2c2c2c;
+  border: 2px solid #444;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.box:hover {
+  background-color: #6f42c1;
+  transform: scale(1.05);
+}
+
+.no-hover:hover {
+  background-color: #2c2c2c;
+  transform: none;
 }
 
 .vertical-line {
   width: 2px;
   height: 40px;
   background: #444;
-  margin-left: 220px; /* aligns under 'Doctor' node; adjust as needed */
+  margin: 0 auto 10px;
 }
 
-.children-row {
-  display: flex;
-  align-items: flex-start;
+.bottom-connector {
+  position: relative;
+  height: 2px;
+  width: 180px;
+  background: transparent;
+  margin-bottom: 10px;
 }
 
-.spacer {
-  width: 220px; /* aligns with 'Doctor' node; adjust as needed */
-}
-
-.child-line-horizontal {
-  width: 80px;
+.bottom-connector .horizontal-line {
+  width: 100%;
   height: 2px;
   background: #444;
-  margin-top: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.children {
+.bottom-row {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
-  margin-left: 8px;
+  gap: 80px;
+  justify-content: center;
 }
 
-.child-node {
-  padding: 8px 16px;
-  border: 2px solid #444;
-  border-radius: 8px;
-  background: #fff;
-  color: #222;
-  font-weight: bold;
-  margin-top: 16px;
+.marriage {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none; /* prevent hover effect */
 }
